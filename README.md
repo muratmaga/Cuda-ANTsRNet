@@ -1,28 +1,10 @@
-An attempt at making a portable ANTsR docker app, with some
-visualization capabilities via RStudio.
+An attempt at making a portable ANTsR docker app, with tensorflow-gpu and CUDA
 
 ```
-docker build --build-arg WHEN=2019-05-01 -t  antsr .
+docker build --build-arg IMAGE_NAME=nvidia/cuda .
 ```
 
-to push an update
-
-```
- docker tag antsr:latest stnava/antsr:latest
- docker push  stnava/antsr:latest
-```
-
-
-Users should run
-
-
-```
-docker run -p 8888:8888 antsr:latest
-```
-
-and then open the listed weblink.
-
-or just run into bash directly
+Users should run into bash directly
 
 ```
 docker run -it --rm antsr:latest /bin/bash
