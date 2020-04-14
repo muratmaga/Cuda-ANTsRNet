@@ -74,6 +74,7 @@ RUN apt-get update; \
 RUN apt-get -y install cmake curl
 RUN apt-get install -y python3 python3-pip python-pip
 RUN apt-get install -y libv8-dev git
+RUN apt install -y libcurl4-openssl-dev
 RUN apt install -y python3-pip
 RUN pip3 install virtualenv keras tensorflow-gpu
 ## Run an install.R script, if it exists.
