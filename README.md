@@ -7,5 +7,7 @@ docker build --build-arg IMAGE_NAME=nvidia/cuda .
 Users should run into bash directly
 
 ```
-docker run -it --gpus all --rm antsr:latest /bin/bash
+docker run -it --gpus all antsr:latest /bin/bash
+
 ```
+REMINDER: Make changes to virtual environment and them commit locally
