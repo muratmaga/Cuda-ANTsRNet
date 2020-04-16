@@ -17,7 +17,7 @@ docker ps -a #look for the CONTAINER_ID and then
 docker commit f1e986f2dcf1 antsrnet:latest
 ````
 
-remove the existing docker and then re-run to make sure changes are incorpored
+remove the existing container and then re-run to make sure changes are incorpored
 
 ```
 docker rm f1e986f2dcf1
