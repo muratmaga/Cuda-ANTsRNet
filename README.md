@@ -10,7 +10,7 @@ and run it with
 docker run -it --gpus all antsrnet:initial /bin/bash
 
 ```
-REMINDER: Make changes to virtual environment and commit them locally
+REMINDER: Make changes to virtual environment (e.g., run ml_fish_seg example) and commit them locally
 
 ```
 docker ps -a #look for the CONTAINER_ID and then 
