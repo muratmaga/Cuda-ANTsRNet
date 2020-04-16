@@ -24,3 +24,14 @@ docker rm f1e986f2dcf1
 docker run -it --gpus all antsrnet:latest /bin/bash
 ```
 
+to push changes to the docker hub 
+```
+docker login --username=mmaga
+docker images #to obtain the imageID of the updated container
+docker tag e7d0f21f8714 mmaga/cuda-antsrnet:latest  ## create a new tag with the remote repository username/repo
+docker push mmaga/cuda-antsrnet:latest
+```
+
+
+
+
